@@ -1,0 +1,40 @@
+.favorites-pill {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.favorites-pill--selected {
+  background-color: #18965f;
+  color: var(--white-green);
+  border: 0px;
+}
+.favorites-pill--selected:hover {
+  color: var(--white-green);
+}
+.favorites-pill--unselected {
+  background-color: white !important;
+  border: 0px solid black !important;
+  color: black;
+}
+.favorites-pill--unselected:hover {
+  color: var(--dark-green);
+}
+
+.favorites-pill__badge {
+  padding: 0 0.5rem;
+  display: grid;
+  place-items: center;
+  border-radius: 2px;
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+
+.favorites-pill--selected > .favorites-pill__badge {
+  background-color: var(--white-green);
+  color: #18965f;
+}
+
+.favorites-pill--unselected > .favorites-pill__badge {
+  background-color: #18965f;
+  color: var(--white-green);
+}

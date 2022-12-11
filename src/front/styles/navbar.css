@@ -1,0 +1,39 @@
+.logo {
+  height: 60px;
+}
+.brand__logo {
+  color: #18965f;
+  padding-left: 0.7rem;
+  font-size: 1.5rem;
+}
+.navbar--custom {
+  background-color: white;
+}
+
+.navbar__btns {
+  /* background-image: linear-gradient(
+    to right,
+    var(--light-green),
+    var(--white-green)
+  ) !important; */
+  font-family: Montserrat;
+  background-color: white;
+  font-weight: 500;
+  color: black;
+}
+
+navbar__btns__logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__signup {
+  color: #18965f;
+  border: 1.5px solid #18965f !important;
+  border-radius: 100px;
+}
+
+.active,
+.navbar__btns:hover {
+  color: #18965f;
+}

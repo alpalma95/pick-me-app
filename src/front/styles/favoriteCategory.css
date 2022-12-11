@@ -1,0 +1,23 @@
+.favorite-category {
+}
+
+.favorite-category__title {
+  font-family: "Montserrat", sans-serif;
+  color: var(--black);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.favorite-category__cards {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 766px) {
+  .favorite-category__cards {
+    flex-direction: column;
+    align-content: center;
+  }
+}

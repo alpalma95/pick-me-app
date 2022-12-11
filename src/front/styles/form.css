@@ -1,0 +1,88 @@
+.form-custom {
+  font-family: "Montserrat", sans-serif;
+  /* font-weight: 400; */
+  width: min(100%, 30rem);
+  margin: 2rem auto;
+  border-radius: 20px;
+  padding: 2rem 3rem;
+  background-color: white;
+  /* -webkit-box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.24);
+  box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.24); */
+  -webkit-box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
+}
+
+.form-custom > * {
+  display: block;
+  width: 100%;
+}
+.container {
+  min-height: 70vh;
+}
+
+.form-custom > h1 {
+  font-weight: 700;
+  color: black;
+  font-size: 1.7rem;
+  /* letter-spacing: 0.2rem; */
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.form-custom > input {
+  border: 0;
+  border-radius: 5px 5px 0 0;
+  border-bottom: 1px solid black;
+  padding: 0rem 1.5rem 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: transparent;
+}
+
+.form-custom > input:focus {
+  outline: none;
+}
+
+.form-custom > input::placeholder {
+  color: black;
+  font-weight: 400;
+}
+
+.form-custom > label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  margin-top: 1rem;
+}
+
+.form-custom > button {
+  background-color: #4eb88a;
+  color: white;
+  border: 1px solid #4eb88a;
+  margin: 2.5rem auto 0 auto;
+  transition: all 500ms ease-out;
+}
+.form-custom > button:hover {
+  color: white;
+  background-color: #18965f;
+  border: 1px solid #18965f;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.bottomToTop {
+  animation: bottomToTop 0.3s ease-out;
+}
+
+@keyframes bottomToTop {
+  0% {
+    transform: translateY(1.5rem) translateX(0.9rem);
+    opacity: 0.4;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

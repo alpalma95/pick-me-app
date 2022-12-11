@@ -1,0 +1,37 @@
+.search-btn {
+  /* background-color: var(--white-green);
+  color: var(--dark-green);
+  border: 2px solid var(--dark-green); */
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+}
+
+.search-btn > a {
+  /* color: var(--dark-green); */
+  color: white;
+  text-decoration: none;
+}
+
+.recipe__card {
+  /* -webkit-box-shadow: 2px 2px 3px -3px #000000;
+  box-shadow: 2px 2px 3px -3px #000000; 
+ border-radius: 10px; */
+  border: none;
+}
+
+.img__card {
+  margin: 5px;
+}
+
+.recipe__btn {
+  background-color: #4eb88a;
+  color: white;
+  border: 1px solid #4eb88a;
+  transition: all 500ms ease-out;
+}
+.recipe__btn:hover {
+  color: white;
+  background-color: #18965f;
+  border: 1px solid #18965f;
+}

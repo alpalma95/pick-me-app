@@ -1,0 +1,12 @@
+.recipe__btn > button {
+  background-color: #4eb88a;
+  color: white;
+  border: 1px solid #4eb88a;
+  margin: 2.5rem auto 0 auto;
+  transition: all 500ms ease-out;
+}
+.recipe__btn > button:hover {
+  color: white;
+  background-color: #18965f;
+  border: 1px solid #18965f;
+}

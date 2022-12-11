@@ -1,3 +1,345 @@
-/* 
-    General Styles used on every website (Don't Repeat Yourself)
-*/
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Charmonman&family=Fjalla+One&family=Great+Vibes&family=Lato:wght@100&family=Merriweather&family=Montserrat:wght@100&family=Open+Sans:ital,wght@0,300;1,300&family=Oswald:wght@300&family=Oxygen:wght@300&family=Poppins:ital,wght@0,100;1,100&family=Proza+Libre&family=Roboto:wght@300&family=Satisfy&display=swap");
+:root {
+  --dark-green: rgba(24, 122, 39, 1);
+  --medium-green: rgba(30, 156, 49, 1);
+  --light-green: rgba(193, 255, 203, 1);
+  --white-green: rgba(249, 253, 249, 1);
+  --black: #282828;
+
+  --bg-color: #f1f1f1;
+  /* #ececec */
+  --dark-red: #fb1d1d;
+
+  --box-shadow: 0px 5px 15px -10px var(--black);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--bg-color);
+}
+
+.body--modal-open {
+  overflow: hidden !important;
+}
+
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.box {
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+}
+.image {
+  background-image: 
+  /* linear-gradient(
+      to bottom,
+      rgba(24, 122, 39, 0.5),
+      rgba(30, 156, 49, 0.5)
+    ), */ url(../../img/green.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+.box > h1 {
+  display: inline-block;
+  justify-content: center;
+  font-family: "Fjalla One", sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  text-transform: capitalize;
+  text-transform: none;
+  letter-spacing: normal;
+  line-height: 1.1;
+  color: #1f3108;
+}
+.caixa {
+  max-width: 700px;
+  width: 100%;
+  padding: 30px;
+  margin: 0 auto;
+  position: relative;
+  flex: 1;
+}
+.maintitle {
+  color: white;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 6rem;
+  /* margin-left: 100px;
+  padding-top: 50px;
+  padding-right: 450px; */
+  letter-spacing: normal;
+  font-weight: 900px;
+  text-transform: none;
+}
+.subtitle {
+  font-family: "Fjalla One", sans-serif;
+  margin-bottom: 55px;
+  text-align: center;
+  color: white;
+  font-size: 1.3rem;
+  /* line-height: 1; */
+}
+.text {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 27px;
+  text-transform: none;
+  color: #ffffff;
+  font-weight: 700;
+}
+.typing-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* border: 2px solid #18965f; */
+  border-radius: 35px;
+  padding: 6px 13px;
+  max-width: 24rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  color: black;
+  background-color: white;
+}
+
+.t-dark {
+  color: black;
+}
+.title {
+  text-align: center;
+  color: white;
+  /* margin-top: 100px; */
+  font-size: 1.3rem;
+  font-family: "Open Sans", sans-serif;
+  /* padding-right: 300px;
+  margin-bottom: 30px; */
+}
+#feature-text {
+  margin-left: 8px;
+}
+.sentence {
+  color: white;
+}
+.typing-container .input-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 42px;
+  background-color: white;
+  /* margin-left: 8px; */
+  animation: blink 0.6s linear infinite alternate;
+}
+.try {
+  /* border: 2px solid #ffffff; */
+  padding: 10px 15px;
+  margin: 0 auto;
+  /* margin-top: 25px;
+  margin-left: 550px; */
+  border-radius: 50px;
+  font-size: 15px;
+  display: block;
+  margin-top: 25px;
+  background-color: #090e06;
+  color: #ffffff;
+  border: none;
+  transition: all ease-out 300ms;
+}
+.try:hover {
+  background-color: rgb(66, 64, 64);
+  cursor: pointer;
+}
+.section-cards {
+  padding-top: 10rem;
+  background-color: #f1f1f1;
+  margin-top: -15rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.title2 {
+  color: #090e06;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 50px;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 200;
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+.icon1,
+.icon2,
+.icon3 {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+}
+.text1 {
+  font-family: "Fjalla One", sans-serif;
+  text-align: center;
+  font-size: 40px;
+  color: #090e06;
+  margin: 30px;
+}
+.text2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #090e06;
+  margin: 20px 30px 0px;
+  text-align: center;
+  display: block;
+}
+.cards-custom {
+  border: 4px solid #69a04e;
+  position: relative;
+  width: min(90%, 25rem);
+  padding: 1rem 2rem;
+  background-image: linear-gradient(
+    to bottom rgba(24, 122, 39, 0.3),
+    rgba(193, 255, 203, 0.3)
+  );
+  /*transition: all 0.2s ease;
+  cursor: pointer;*/
+  transition: 0.5s;
+  margin-bottom: 15px;
+}
+.cards-custom:hover {
+  transform: translateY(-50px);
+  box-shadow: var(--box-shadow);
+}
+/* Remove extra left and right margins, due to padding */
+.container-cards-custom {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 1rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.landing__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 3rem;
+  margin-bottom: 50px;
+}
+
+.landing__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 250px;
+  padding: 20px;
+}
+
+.landind__card__img {
+  background-color: #93c572;
+  padding: 20px;
+  border-radius: 50%;
+  width: 50%;
+}
+
+.landind__card__img > img {
+  width: 100%;
+  height: 100%;
+  filter: invert(100%);
+}
+
+.landing__card > h5 {
+  margin-top: 10px;
+}
+
+.landing__card > p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.search-bar {
+  padding: 0 !important;
+}
+
+@media (max-width: 700px) {
+  .maintitle {
+    font-size: 3rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .typing-container {
+    transform: scale(0.9);
+    font-size: 1.5rem;
+  }
+  .image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+  }
+  .search-bar {
+    display: grid;
+    gap: 0.1rem;
+    grid-template-areas:
+      "input input input"
+      "opts opts search";
+  }
+  .search-bar__btn {
+    grid-area: search;
+    justify-self: end;
+    display: block;
+  }
+  .search-bar__input {
+    width: 100% !important;
+    grid-area: input;
+  }
+  .search-bar__options {
+    grid-area: opts;
+    width: 100% !important;
+  }
+  .recipe-card__container {
+    padding: 0 !important;
+  }
+}
+
+.btn:focus {
+  box-shadow: none;
+}

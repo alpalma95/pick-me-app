@@ -1,0 +1,84 @@
+.settings {
+  padding-bottom: 2rem;
+}
+
+.settings__h1 {
+  color: #18965f;
+}
+
+.settings__h2 {
+  color: black;
+  font-size: 1rem;
+}
+
+.settings__h1,
+.settings__h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+.settings > input {
+  border: 0;
+  border-radius: 5px 5px 0 0;
+  border-bottom: 1px solid #18965f;
+  padding: 0rem 1.5rem 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: transparent;
+}
+
+.settings > input:focus {
+  outline: none;
+}
+
+.settings > button {
+  color: #18965f;
+  border: 1px solid #18965f;
+  display: block;
+  margin-top: 1rem;
+  padding: 0.5rem 0.7rem;
+  border-radius: 5px;
+  background-color: transparent;
+}
+.settings > button:hover {
+  color: white;
+  background-color: #18965f;
+  border: 2px solid #18965f;
+}
+
+.border-error {
+  border: 2px solid var(--dark-red) !important;
+}
+
+.settings > .settings__delete-btn,
+.settings__delete-section > .settings__delete-btn {
+  color: var(--dark-red);
+  border: 2px solid var(--dark-red);
+  display: block;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 0.5rem 0.7rem;
+}
+.settings > .settings__delete-btn:hover,
+.settings__delete-section > .settings__delete-btn:hover {
+  color: var(--white-green);
+  border: 2px solid var(--dark-red);
+  padding: 0.5rem 0.7rem;
+
+  background-color: var(--dark-red);
+}
+
+.settings__delete-section > .settings__cancel-btn {
+  display: block;
+  padding: 0.5rem 0.7rem;
+  border-radius: 5px;
+  border: 2px solid var(--dark-green);
+  color: var(--dark-green);
+  background-color: transparent;
+}
+
+.settings__delete-section {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+}
